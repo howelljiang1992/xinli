@@ -1,0 +1,28 @@
+@import '../modules2/wxstyle';
+
+.weui-tabbar {
+  background: @csui-fff;
+  &:before {
+    border-top-color: @csui-aa;
+    color: @csui-aa;
+  }
+  .weui-tabbar__item {
+    i.weui-tabbar__icon,
+    .weui-tabbar__icon > i {
+      color: @csui-aa;
+    }
+    .weui-tabbar__label {
+      font-size: 12px;
+      margin-top: 5px;
+      color: @csui-888;
+    }
+    &.weui-bar__item_on,
+    &:active {
+      i.weui-tabbar__icon,
+      .weui-tabbar__icon > i,
+      .weui-tabbar__label {
+        color: @theme-color;
+      }
+    }
+  }
+}

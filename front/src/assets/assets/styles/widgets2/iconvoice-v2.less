@@ -1,0 +1,81 @@
+@import '../modules2/wxstyle';
+
+@border-color: #fff;
+
+.iconvoice-layer {
+  position: relative;
+  width: 12px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.iconvoice-layer .icon-circle {
+  border-width: 2px;
+  border-style: solid;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: @border-color;
+  position: absolute;
+}
+
+.iconvoice-layer .icon-circle-small {
+  border-width: 3px;
+  width: 7px;
+  height: 5px;
+  left: 8px;
+  top: 5px;
+}
+.iconvoice-layer .icon-circle-medium {
+  width: 16px;
+  height: 16px;
+  left: 4px;
+  top: 0px;
+  opacity: 1;
+}
+.iconvoice-layer .icon-circle-large {
+  width: 22px;
+  height: 24px;
+  left: 0;
+  top: -4px;
+  opacity: 1;
+}
+
+.play .iconvoice-layer .icon-circle-medium {
+  animation: load 1.2s steps(1) infinite;
+}
+
+.play .iconvoice-layer .icon-circle-large {
+  animation: loadl 1.2s steps(1) infinite;
+}
+
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loadl {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.iconvoice-layer--reverse {
+  transform: rotate(180deg);
+}

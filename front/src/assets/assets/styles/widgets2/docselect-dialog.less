@@ -1,0 +1,59 @@
+.docselect .docselect-dialog {
+  .weui-dialog {
+    height: 100%;
+    left: 0;
+    right: auto;
+    border-radius: 0;
+    max-width: 100%;
+    width: 100%;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    top: 0;
+    text-align: left;
+    .types {
+      .weui-cell i {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+      }
+    }
+    .weui-dialog__bd {
+      &:first-child {
+        padding: 0;
+      }
+      .weui-cells {
+        margin-top: 0;
+        &:before {
+          display: none;
+        }
+        .weui-cell {
+          .weui-cell__ft:after,
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+    .weui-flex {
+      height: 100%;
+      overflow: auto;
+      .weui-flex__item {
+        .weui-cells {
+          background: none;
+
+          &:after {
+            display: none;
+          }
+          .weui-cell.active {
+            color: @theme-color;
+          }
+        }
+        &:first-child {
+          background: @csui-f4;
+          .weui-cell.active {
+            background: @csui-fff;
+          }
+        }
+      }
+    }
+  }
+}

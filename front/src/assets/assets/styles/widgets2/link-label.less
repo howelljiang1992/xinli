@@ -1,0 +1,26 @@
+.link-label a,
+.link-label span {
+  background: @csui-grav1;
+  border-radius: 3px;
+  padding: 3px 8px 2.5px;
+  font-size: @fz-14;
+  color: @csui-888;
+  margin-right: 10px;
+  display: inline-block;
+  margin-bottom: 5px;
+  float: left;
+  line-height: 1;
+  &.current,
+  &:active {
+    background: @theme-color;
+    color: @csui-fff;
+  }
+  &.dis {
+    background: @csui-grav1;
+    color: @csui-888;
+    &:active {
+      background: @csui-grav1;
+      color: @csui-888;
+    }
+  }
+}

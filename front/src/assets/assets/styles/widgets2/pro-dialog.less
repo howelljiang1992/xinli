@@ -1,0 +1,52 @@
+.pro-dialog {
+  .weui-dialog {
+    border-radius: 5px;
+    .weui-dialog__hd {
+      padding-top: 15px;
+      padding-bottom: 0;
+      position: relative;
+      .close {
+        position: absolute;
+        left: 15px;
+        top: 0;
+        i {
+          color: @csui-888;
+          font-size: 20px;
+          line-height: 50px;
+        }
+      }
+    }
+    .weui-dialog__bd {
+      padding: 20px 0.8em;
+      max-height: 300px;
+      overflow: auto;
+      text-align: left;
+      min-height: inherit;
+      p {
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .weui-dialog__ft {
+      line-height: 50px;
+      .weui-btn-area {
+        width: 100%;
+      }
+      .weui-dialog__btn_primary {
+        color: @theme-color;
+      }
+    }
+  }
+  &.scroll {
+    .weui-dialog {
+      .weui-dialog__hd {
+        padding-bottom: 20px;
+      }
+      .weui-dialog__bd {
+        padding-top: 0;
+      }
+    }
+  }
+}

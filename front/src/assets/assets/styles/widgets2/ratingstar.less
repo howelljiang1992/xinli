@@ -1,0 +1,38 @@
+.rating-star {
+  span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  ul {
+    display: inline-block;
+    vertical-align: middle;
+    li {
+      display: inline-block;
+      float: left;
+      i {
+        color: @csui-df;
+      }
+      &.on {
+        i {
+          color: @csui-fc0;
+          &.halfStyle {
+            position: relative;
+            color: @csui-df;
+            &:after {
+              position: absolute;
+              display: block;
+              z-index: 1;
+              top: 0;
+              left: 0;
+              width: 50%;
+              content: '\e600';
+              overflow: hidden;
+              color: @csui-fc0;
+              line-height: initial;
+            }
+          }
+        }
+      }
+    }
+  }
+}

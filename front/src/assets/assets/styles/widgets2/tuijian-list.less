@@ -1,0 +1,107 @@
+.tuijian-list {
+  overflow: hidden;
+  width: 100%;
+
+  .weui-cells {
+    background: #f9fbfc;
+    margin-top: 15px;
+    .weui-cell {
+      padding-top: 13px;
+      padding-bottom: 13px;
+      .weui-cell__hd {
+        i {
+          margin-right: 10px;
+        }
+      }
+      .weui-cell__ft {
+        small {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .tuijian-cont {
+    overflow: auto;
+    background: #f9fbfc;
+    width: 100%;
+    position: relative;
+    .weui-grids {
+      background: #f9fbfc;
+      padding: 0 0 15px 15px;
+      overflow-x: auto;
+      &:before,
+      &:after {
+        display: none;
+      }
+      .weui-grid {
+        box-sizing: border-box;
+        border: 1px solid #eee;
+        border-radius: 3px;
+        margin-right: 10px;
+        text-align: center;
+        padding: 15px 5px;
+        width: auto;
+        background: @csui-fff;
+        &:active {
+          background: none;
+        }
+        &:before,
+        &:after {
+          display: none;
+        }
+        .weui-grid__icon {
+          width: 50px;
+          height: 50px;
+          .headicon {
+            border-radius: 100%;
+            .headicon-img {
+              border-radius: 100%;
+              img {
+                height: auto;
+              }
+            }
+            span {
+              right: 0;
+            }
+            img {
+              border-radius: 100%;
+              height: auto;
+            }
+          }
+          & + .weui-grid__label {
+            margin-top: 10px;
+          }
+        }
+        .weui-grid__label {
+          font-size: 13px;
+          small {
+            display: block;
+            color: @csui-888;
+            font-size: @fz-10;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+        }
+        .rating-star {
+          text-align: center;
+          i {
+            font-size: 12px;
+          }
+        }
+        .weui-btn-area {
+          display: inline-block;
+          margin: 10px auto 0;
+          .weui-btn {
+            font-size: 13px;
+            padding-left: 0;
+            padding-right: 0;
+            width: 80px;
+            line-height: 28px;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+  }
+}

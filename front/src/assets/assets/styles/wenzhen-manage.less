@@ -1,0 +1,50 @@
+@import 'common2';
+@import 'widgets2/doclist';
+
+.wenzhen-manage {
+  .weui-msg {
+    padding-top: 100px;
+    .weui-msg__icon-area .weui-icon_msg {
+      color: @csui-df;
+    }
+  }
+  /*�ҵ��˵�*/
+  &.bill {
+    .weui-grids {
+      background: #fff;
+      &:before {
+        display: none;
+      }
+      .weui-grid {
+        text-align: center;
+        width: 50%;
+        h3 {
+          color: @csui-000;
+          font-size: @fz-20;
+        }
+        .weui-grid__label {
+          color: @csui-888;
+        }
+      }
+    }
+    .weui-cells {
+      small {
+        font-size: @fz-12;
+        color: @csui-888;
+      }
+      .weui-cell__ft {
+        .in,
+        .out {
+          font-size: @fz-17;
+          font-weight: 700;
+        }
+        .in {
+          color: @theme-color;
+        }
+        .out {
+          color: @csui-000;
+        }
+      }
+    }
+  }
+}

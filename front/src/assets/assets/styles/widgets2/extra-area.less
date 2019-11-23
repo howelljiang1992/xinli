@@ -1,0 +1,52 @@
+.weui-msg__extra-area {
+  &.style1 {
+    background: #fff;
+    margin-bottom: 0;
+    .weui-flex {
+      font-size: 17px;
+      &:before {
+        content: ' ';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        height: 1px;
+        border-top: 1px solid #d9d9d9;
+        color: #d9d9d9;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+      }
+      .weui-flex__item {
+        color: #888;
+        text-align: left;
+        padding: 15px 120px 15px 15px;
+        .theme-color {
+          margin-left: 15px;
+        }
+      }
+      .oper {
+        position: absolute;
+        right: 0;
+        top: 0.5px;
+        background: @theme-color;
+        color: #fff;
+        display: block;
+        width: 120px;
+        height: 100%;
+        span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          display: block;
+        }
+        &:active {
+          background: @theme-dark-color;
+        }
+      }
+    }
+  }
+}

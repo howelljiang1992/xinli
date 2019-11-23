@@ -1,0 +1,197 @@
+@import 'common2';
+@import (reference) 'widgets2/placeholder-wrapper';
+
+.add-patient {
+  margin-top: 0;
+  &:before {
+    display: none;
+  }
+  .weui-cell:before {
+    left: 0;
+  }
+  .weui-cell_link {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    &:before {
+      display: none;
+    }
+    .weui-cell__bd {
+      padding-right: 20px;
+      position: relative;
+      display: inline-block;
+      &:after {
+        font-family: 'iconfont' !important;
+        content: '\e613';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        top: 50%;
+        margin-top: -9px;
+        color: @csui-df;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+    }
+    &.open {
+      .weui-cell__bd:after {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+      }
+    }
+  }
+}
+
+.patient {
+  .weui-icon-info-circle {
+    color: @csui-green;
+  }
+  .page__bd {
+    padding-top: 50px;
+  }
+  /* 弹窗样式 */
+  .pro-dialog {
+    /* 就诊人弹窗样式 */
+    .weui-dialog {
+      section {
+        margin-top: 20px;
+        margin-bottom: 24px;
+      }
+      img {
+        width: 94%;
+        padding-left: 3%;
+        margin-top: 10px;
+      }
+      .weui-btn-area {
+        margin: 0;
+      }
+    }
+  }
+  .weui-cells__tips {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    a {
+      color: @csui-green;
+      &:active {
+        color: @csui-green-dark;
+      }
+    }
+  }
+}
+
+.patient .weui-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  text-align: center;
+  a {
+    color: @csui-green;
+    &:active {
+      color: @csui-green-dark;
+    }
+  }
+}
+
+.page__bd_spacing {
+  /* 自建就诊人系统 general 样式 */
+  margin-top: 10px;
+  .weui-msg__title {
+    margin: 0 15px;
+    font-size: 17px;
+  }
+  .id-wrapper {
+    .wrapper;
+    margin: 20px 25px 30px 25px;
+  }
+
+  /* wenzhen-patient-verifyid.html */
+  .id-wrapper .placedholder img.id-image {
+    width: 90%;
+    padding: 5%;
+  }
+  .weui-cell__bd .weui-input {
+    text-align: right;
+  }
+  .id-wrapper .action-cover .iconfont-tick {
+    padding: 20px;
+    font-size: 38px;
+  }
+
+  /* wenzhen-patient-photopolicy.html */
+  .weui-dialog {
+    background-color: none;
+  }
+}
+
+/* 拍照规范弹窗样式 */
+.photo-dialog {
+  .weui-mask {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .weui-dialog {
+    background-color: transparent;
+    .sample-photo-lists {
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        i {
+          flex: 1.5;
+          &:before {
+            color: @csui-fff;
+            border-radius: 50%;
+            line-height: 1.2;
+          }
+        }
+        img {
+          margin-right: 20px;
+          width: 75px;
+          height: 45px;
+        }
+        span {
+          flex: 1.5;
+          text-align: left;
+          font-size: 14px;
+          color: @csui-f4;
+        }
+      }
+      .iconfont-close1:before {
+        font-size: 8px;
+        background-color: @csui-err;
+        padding: 6px;
+      }
+      .iconfont-tick:before {
+        font-size: 14px;
+        background-color: @csui-green;
+        padding: 3px 3px 4px 4px;
+      }
+      .card-rotate {
+        overflow: hidden;
+        border: 1px solid @csui-fff;
+        width: 75px;
+        height: 45px;
+        margin-right: 20px;
+        img {
+          transform: rotate(20deg);
+        }
+      }
+      .card-blur {
+        filter: blur(0.5px);
+      }
+    }
+    .weui-dialog__ft:after {
+      display: none;
+    }
+    .weui-btn_plain-default {
+      color: @csui-fa;
+      border-color: @csui-fa;
+      min-width: 200px;
+      &:active {
+        color: @csui-b2;
+        border-color: @csui-b2;
+      }
+    }
+  }
+}

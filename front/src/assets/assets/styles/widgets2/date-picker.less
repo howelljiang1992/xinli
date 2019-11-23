@@ -1,0 +1,165 @@
+@import '../modules2/wxstyle.less';
+@import './tick-select.less';
+
+.plus-picker--popup #weui-picker-confirm {
+  color: @csui-green;
+}
+.plus-picker--popup .weui-picker__hd {
+  line-height: 45px;
+  padding: 0;
+}
+.plus-picker--popup .weui-picker__hd .weui-picker__action a {
+  display: inline-block;
+  color: inherit;
+  height: 45px;
+  padding: 0 15px;
+}
+
+.plus-mask {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.plus-mask.fade-in {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease-out;
+}
+.plus-mask.fade-out {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.plus-picker {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 2000;
+  backface-visibility: hidden;
+  transform: translateY(100%);
+}
+
+.plus-picker.slide-up {
+  transform: translateY(20%);
+  transition: all 0.3s ease;
+}
+.plus-picker.slide-up--higher {
+  transform: translateY(0%);
+  transition: all 0.2s ease-out 0.1s;
+}
+.plus-picker.slide-down {
+  transform: translateY(100%);
+  transition: all 0.3s ease;
+}
+.plus-picker.slide-down--lower {
+  transform: translateY(20%);
+  transition: all 0.2s ease-out;
+}
+
+.plus-picker__bd {
+  position: relative;
+  background-color: @csui-fff;
+  padding: 15px 0 20px;
+  overflow: hidden;
+}
+.day-picker {
+  margin: 0 18px;
+  @media @smalldevice {
+    margin: 0 13px;
+  }
+}
+.month-picker {
+  padding: 5px 0px 10px 0px;
+  .tick-select__option--noborder {
+    min-width: 58px;
+    @media @smalldevice {
+      min-width: auto;
+      width: 50px;
+    }
+  }
+}
+ul.month-list {
+  align-content: space-around;
+  height: 135px;
+  @media @smalldevice {
+    height: 120px;
+  }
+  li {
+    width: 25%;
+    text-align: center;
+    box-sizing: border-box;
+    list-style: none;
+    position: relative;
+    & .year-indicator {
+      position: absolute;
+      color: @csui-ca;
+      font-size: 10px;
+      top: 8px;
+      right: -12px;
+      @media @smalldevice {
+        font-size: 8px;
+        right: -9px;
+      }
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        height: 8px;
+        bottom: -6px;
+        left: 11px;
+        border-right: 1px solid @csui-ca;
+        @media @smalldevice {
+          height: 5px;
+          bottom: -3px;
+          left: 9px;
+        }
+      }
+      &::before {
+        top: -6px;
+        @media @smalldevice {
+          top: -3px;
+        }
+      }
+    }
+  }
+}
+
+.half-month-picker {
+  margin: 5px 15px 10px 15px;
+  &.tick-select--split {
+    width: auto;
+  }
+  .tick-select__option--small {
+    padding: 2px 0;
+    transform: none;
+  }
+}
+
+@smalldevice: ~'only screen and (max-width: 320px)';
+.tick-select__option--noborder,
+.tick-select__option--small {
+  @media @smalldevice {
+    font-size: 12px;
+  }
+}
+
+@iphoneX: ~'only screen and (device-width : 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)';
+// .plus-picker__bd {
+//   @media @iphoneX {
+//     padding-bottom: 30px;
+//   }
+// }
+
+// .plus-picker.slide-down--lower {
+//   @media @iphoneX {
+//     transform: translateY(23%);
+//   }
+// }

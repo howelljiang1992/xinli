@@ -1,0 +1,74 @@
+.headicon {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background: url('../../res/img/ico-doctor-normal.png') no-repeat 0 0;
+  -webkit-background-size: contain;
+  background-size: contain;
+  border-radius: 3px;
+  &.pat {
+    background: url('../../res/img/ico-patient-normal.png') no-repeat 0 0;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .headicon-img {
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 3px;
+    overflow: hidden;
+    height: 100%;
+    text-align: center;
+    img {
+      border: none;
+      max-height: initial;
+      border-radius: 0;
+      &.opp {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+  img {
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 3px;
+    border: none;
+  }
+  span {
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+    font-size: @fz-10;
+    display: block;
+    width: 29px;
+    height: 14px;
+    background: url('../../res/img/label-online.png') no-repeat 0 0;
+    -webkit-background-size: contain;
+    background-size: contain;
+    text-indent: -9999em;
+    z-index: 2;
+  }
+  .headiconbg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  &.off {
+    position: relative;
+    span {
+      z-index: 2;
+      background: url('../../res/img/label-offline.png') no-repeat 0 0;
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+    .headicon-img,
+    img {
+      border-color: #ccc;
+    }
+  }
+}

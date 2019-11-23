@@ -1,0 +1,98 @@
+.formlist {
+  &.style2 {
+    .weui-cell {
+      &.topone {
+        .weui-cell__bd {
+          font-size: 14px;
+          color: @csui-888;
+        }
+      }
+    }
+  }
+}
+
+.weui-cells {
+  &.statu {
+    margin-top: 0;
+    .weui-cell {
+      background: @theme-color;
+      color: @csui-fff;
+      .weui-cell__hd {
+        i {
+          color: @csui-fff;
+          font-size: 24px;
+        }
+      }
+      .weui-cell__bd {
+        .weui-media-box__desc {
+          color: @csui-fff;
+        }
+      }
+    }
+  }
+  /*��������*/
+  &.area {
+    background: none;
+    z-index: 2;
+    .weui-cell {
+      display: block;
+      background: #fff;
+      margin-bottom: 1.17647059em;
+      &:before {
+        left: 0;
+      }
+      &:after {
+        content: ' ';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 1px;
+        border-bottom: 1px solid #e5e5e5;
+        color: #e5e5e5;
+        -webkit-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+        z-index: 2;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .weui-cell__bd {
+        position: relative;
+        padding-bottom: 10px;
+        &:after {
+          content: ' ';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          height: 1px;
+          border-bottom: 1px solid #e5e5e5;
+          color: #e5e5e5;
+          -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+          -webkit-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+          z-index: 2;
+        }
+      }
+      .weui-cell__ft {
+        text-align: left;
+        padding-top: 10px;
+        font-size: 14px;
+        a.open {
+          display: inline-block;
+          margin-left: 20px;
+          i:before {
+            color: @csui-888;
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

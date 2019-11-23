@@ -1,0 +1,62 @@
+@import 'modules2/wxstyle';
+
+.task-wrap {
+  .tastlist {
+    padding: 65px 15px 0;
+    .item {
+      border-radius: 5px;
+      border: 1px solid @csui-df;
+      background: #fff;
+      margin-bottom: 15px;
+      &.weui-cell_access:active {
+        background: #ededed;
+      }
+      .weui-cell {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .weui-cell__hd {
+          .headicon {
+            margin-right: 15px;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .weui-cell__bd {
+          h4 {
+            font-size: 17px;
+          }
+          p {
+            color: @csui-888;
+            font-size: 12px;
+          }
+        }
+      }
+      .item-ft {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 5px;
+        color: @csui-888;
+        font-size: 14px;
+        .statu-hf {
+          margin-left: 15px;
+          color: @theme-color;
+          &.warn {
+            color: @csui-fc0;
+          }
+        }
+        .statu-time {
+          text-align: right;
+          &.warn {
+            color: @csui-err;
+          }
+          i {
+            vertical-align: middle;
+            margin-right: 2px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import 'common2';
+
+@import 'widgets2/pro-dialog';
+
+a {
+  color: @csui-link;
+  &:hover {
+    color: @csui-link-hover;
+  }
+}
+
+.ident-wrap {
+  &.index {
+    .ad {
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+    .weui-cells.weui-cells_checkbox {
+      background: @csui-fff;
+      margin-top: 0;
+      &:before {
+        display: block;
+        left: 15px;
+      }
+      .weui-agree__text a {
+        color: @theme-color;
+      }
+    }
+  }
+  .weui-msg {
+    .weui-cells {
+      text-align: left;
+      .weui-cell__bd {
+        min-width: 100px;
+      }
+      .weui-cell__ft {
+        word-break: break-all;
+      }
+    }
+  }
+}

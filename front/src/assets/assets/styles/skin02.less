@@ -1,0 +1,373 @@
+@theme-color-skin2: #ea3172;
+@theme-dark-color-skin2: #d22c66;
+@theme-dis-color-skin2: #f598b9;
+@theme-thin-color-skin2: #fbd6e3;
+@import 'modules2/wxstyle';
+.skin02 {
+  .page {
+    .theme-color {
+      color: @theme-color-skin2;
+    }
+    .weui-btn_primary {
+      background-color: @theme-color-skin2;
+      &.weui-btn_disabled {
+        background: @theme-dis-color-skin2;
+      }
+    }
+    .weui-btn_plain-primary {
+      color: @theme-color-skin2;
+      border-color: @theme-color-skin2;
+      &:not(.weui-btn_plain-disabled):active {
+        background: @theme-thin-color-skin2;
+        color: @theme-color-skin2;
+        border-color: @theme-color-skin2;
+      }
+      &.weui-btn_plain-disabled {
+        color: @theme-dis-color-skin2;
+        border-color: @theme-dis-color-skin2;
+      }
+    }
+
+    .weui-btn_primary:not(.weui-btn_disabled):active {
+      background-color: @theme-dark-color-skin2;
+    }
+
+    .weui-switch:checked,
+    .weui-switch-cp__input:checked ~ .weui-switch-cp__box {
+      border-color: @theme-color-skin2;
+      background-color: @theme-color-skin2;
+    }
+
+    /*ҽ����ҳ*/
+    &.wenzhen {
+      .weui-navbar.style1 {
+        .iconfont-weibiaoti,
+        .iconfont-star1 {
+          color: @theme-color-skin2;
+        }
+      }
+      .headicon {
+        span {
+          background: url('../res/img/skin/02/label-online.png') no-repeat 0 0;
+          -webkit-background-size: contain;
+          background-size: contain;
+        }
+        &.off {
+          span {
+            background: url('../res/img/label-offline.png') no-repeat 0 0;
+            -webkit-background-size: contain;
+            background-size: contain;
+          }
+        }
+      }
+
+      .doc-list
+        .weui-panel
+        .weui-media-box
+        .weui-media-box__bd
+        .weui-media-box__desc
+        span.price {
+        color: @theme-color-skin2;
+        i {
+          color: @theme-color-skin2;
+        }
+      }
+      &.docselect
+        .docselect-dialog
+        .weui-dialog
+        .weui-flex
+        .weui-flex__item
+        .weui-cells
+        .weui-cell.active {
+        color: @theme-color-skin2;
+      }
+      &.docselect .types {
+        .weui-cell {
+          color: @theme-color-skin2;
+        }
+      }
+      &.docinfo {
+        .weui-panel_access {
+          .weui-panel__hd {
+            &.style1 .weui-cell__ft {
+              color: @theme-color-skin2;
+              .iconfont-h-arr-r {
+                color: @theme-color-skin2;
+              }
+            }
+          }
+        }
+      }
+      &.form-wrap {
+        .weui-cells + .weui-cells_checkbox {
+          .weui-cell__bd {
+            .weui-agree__text {
+              a {
+                color: @theme-color-skin2 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .weui-cells.weui-cells_checkbox
+      .weui-cell__hd
+      .weui-check:checked
+      + .weui-icon-checked:before {
+      color: @theme-color-skin2;
+    }
+    .weui-actionsheet
+      .weui-actionsheet__action
+      .weui-actionsheet__cell.actionsheet__cell_primary {
+      color: @theme-color-skin2;
+    }
+    .weui-actionsheet
+      .weui-actionsheet__menu
+      .weui-actionsheet__cell.flex
+      .weui-actionsheet__cell__ft
+      a
+      i {
+      color: @theme-color-skin2;
+    }
+
+    &.huifu-wrap .weui-msg__extra-area.oper .weui-footer a:last-child {
+      color: @theme-color-skin2;
+    }
+    &.wenzhen-manage.rtx-wrap
+      .page__bd
+      .weui-navbar
+      .weui-navbar__item.weui-bar__item_on {
+      color: @theme-color-skin2;
+      &:before {
+        border-bottom-color: @theme-color-skin2;
+      }
+    }
+    .link-label a.current,
+    .link-label a:active {
+      background: @theme-color-skin2;
+    }
+    .link-label a.dis.current,
+    .link-label a.dis:active {
+      background: @csui-grav1;
+      color: @csui-888;
+    }
+    &.chat-wrap {
+      .chat-dialog-wrap.right .chat-dialog .message {
+        background: @theme-color-skin2;
+        &:before {
+          background: url(../res/img/skin/02/chatdialog-icor.png) no-repeat 0 0;
+          -webkit-background-size: contain;
+          background-size: contain;
+        }
+      }
+      .chat-dialog-wrap.dialog-px .chat-dialog .message {
+        background: @csui-fff;
+        p.pxlogo {
+          background: @theme-color-skin2;
+        }
+      }
+      .chat-dialog-wrap.dialog-report {
+        .ico-report {
+          background: url(../res/img/skin/02/ico-report.png) no-repeat 0 0;
+          -webkit-background-size: contain;
+          background-size: contain;
+        }
+        &.pingjia {
+          .chat-hint-layer
+            .weui-panel
+            .weui-panel__ft
+            .weui-cell_link
+            .weui-cell__bd
+            span {
+            color: @theme-color-skin2;
+          }
+        }
+      }
+      .page__ft .weui-cells.oper .weui-cell__bd .weui-textarea + a i,
+      .chat-wrap .page__ft .weui-cells.oper .weui-cell__bd textarea + a i {
+        color: @theme-color-skin2;
+      }
+      .page__ft .weui-media-box .weui-media-box__ft h4,
+      .page__ft .weui-media-box .weui-media-box__ft p {
+        color: @theme-color-skin2;
+      }
+    }
+  }
+  .weui-dialog__btn_primary {
+    color: @theme-color-skin2;
+  }
+  .pro-dialog .weui-dialog .weui-dialog__hd:after {
+    border-bottom: 1px solid @theme-color-skin2;
+    color: @theme-color-skin2;
+  }
+  .pro-dialog .weui-dialog .weui-dialog__ft .weui-dialog__btn_primary {
+    color: @theme-color-skin2;
+  }
+  /*Ĭ��ͷ��*/
+  .chat-dialog-wrap .chat-dialog .face {
+    &.doct {
+      background: url(../res/img/skin/02/ico-doctor-normal.png) no-repeat 0 0;
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+    &.pat {
+      background: url(../res/img/skin/02/ico-patient-normal.png) no-repeat 0 0;
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+  }
+
+  .headicon {
+    background: url(../res/img/skin/02/ico-doctor-normal.png) no-repeat 0 0;
+    -webkit-background-size: contain;
+    background-size: contain;
+    &.pat {
+      background: url(../res/img/skin/02/ico-patient-normal.png) no-repeat 0 0;
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+  }
+  .docinfo-sum {
+    background: url(//beta.gtimg.com/hospital_img/static/res/skin/02/infobg2.png)
+      no-repeat center bottom;
+    -webkit-background-size: cover;
+    background-size: cover;
+    .weui-panel {
+      .weui-panel__hd {
+        .headicon {
+          span {
+            background: @csui-fff;
+            color: @theme-color-skin2;
+          }
+          &.off {
+            span {
+              background: @csui-grav1;
+              color: @csui-888;
+            }
+          }
+        }
+      }
+    }
+  }
+  .zixunlist {
+    .weui-grids .weui-grid {
+      .weui-grid__label small {
+        color: @theme-color-skin2;
+      }
+      .weui-grid__icon i {
+        color: @theme-color-skin2;
+      }
+    }
+  }
+  /*ҽ����*/
+  .doc-wrap {
+    .docinfo-sum {
+      background: url(//beta.gtimg.com/hospital_img/static/res/skin/02/doc-inputbg.png)
+        no-repeat center bottom;
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+    .index .docinfo-sum {
+      background: url(//beta.gtimg.com/hospital_img/static/res/skin/02/infobg2.png)
+        no-repeat center bottom;
+      -webkit-background-size: cover;
+      background-size: cover;
+      .panel-hint
+        .weui-cells_form
+        .weui-cell_switch
+        .weui-cell__ft
+        .weui-switch:checked:after {
+        background: @theme-color-skin2;
+      }
+    }
+    .pj-total {
+      border-bottom-color: @theme-color-skin2;
+    }
+    &.pat-wrap {
+      .patlist .weui-cell:before {
+        background: @theme-color-skin2;
+      }
+      .pat-detail .docinfo-sum {
+        background: url(//beta.gtimg.com/hospital_img/static/res/skin/02/infobg2.png)
+          no-repeat center top;
+      }
+    }
+    &.task-wrap {
+      .tastlist .item .item-ft .statu-hf {
+        color: @theme-color-skin2;
+        &.warn {
+          color: @csui-fa0;
+        }
+      }
+    }
+  }
+  .weui-tabbar .weui-tabbar__item.weui-bar__item_on i.weui-tabbar__icon,
+  .weui-tabbar .weui-tabbar__item:active i.weui-tabbar__icon,
+  .weui-tabbar .weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon > i,
+  .weui-tabbar .weui-tabbar__item:active .weui-tabbar__icon > i,
+  .weui-tabbar .weui-tabbar__item.weui-bar__item_on .weui-tabbar__label,
+  .weui-tabbar .weui-tabbar__item:active .weui-tabbar__label {
+    color: @theme-color-skin2;
+  }
+  .weui-actionsheet .toolbar a.theme-color {
+    color: @theme-color-skin2;
+  }
+  .weui-navbar .weui-navbar__item.weui-bar__item_on {
+    color: @theme-color-skin2;
+    &:before {
+      border-bottom-color: @theme-color-skin2;
+    }
+  }
+  /*ico*/
+  .ico-wz1 {
+    background-image: url('//beta.gtimg.com/hospital_img/static/res/skin/02/ico-wz1.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  .ico-wz2 {
+    background-image: url('//beta.gtimg.com/hospital_img/static/res/skin/02/ico-wz2.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  .ico-wz3 {
+    background-image: url('//beta.gtimg.com/hospital_img/static/res/skin/02/ico-wz3.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  /*px-wrap*/
+  .px-wrap {
+    .px-detail .weui-panel__bd {
+      .weui-media-box {
+        .weui-media-box__title.weui-flex .right a i {
+          color: @theme-color-skin2;
+        }
+        .statu.style1 {
+          background: @theme-thin-color-skin2;
+          color: @theme-color-skin2;
+          border-color: @theme-color-skin2;
+        }
+        .statu.style2 {
+          color: @theme-color-skin2;
+        }
+      }
+    }
+    .searchbar {
+      .searchbar-result .weui-flex em {
+        color: @theme-color-skin2;
+      }
+      & + .weui-cell_link {
+        color: @theme-color-skin2;
+      }
+    }
+  }
+  /*report*/
+  .report-wrap.report-bill
+    .weui-form-preview.style2
+    .weui-form-preview__bd
+    .item
+    .item-title:before {
+    background: @theme-color-skin2;
+  }
+}

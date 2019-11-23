@@ -1,0 +1,61 @@
+.anim {
+  .iconvoice-layer .icon-circle {
+    -webkit-animation: load 1.2s infinite ease-in-out;
+    animation: load 1.2s infinite ease-in-out;
+  }
+}
+.iconvoice-layer {
+  position: relative;
+  width: 12.5px;
+  height: 16.5px;
+  display: inline-block;
+  vertical-align: middle;
+  .icon-circle {
+    width: 12.5px;
+    height: 16.5px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    &:first-child {
+      background-image: url(../../res/img/iconvoice/iconvoice1.png);
+      -webkit-animation-delay: 0.13s;
+      animation-delay: 0.13s;
+    }
+    &:nth-child(2) {
+      background-image: url(../../res/img/iconvoice/iconvoice2.png);
+      -webkit-animation-delay: 0.26s;
+      animation-delay: 0.26s;
+    }
+    &:last-child {
+      background-image: url(../../res/img/iconvoice/iconvoice3.png);
+      -webkit-animation-delay: 0.39s;
+      animation-delay: 0.39s;
+    }
+  }
+  &.thin {
+    .icon-circle {
+      &:first-child {
+        background-image: url(../../res/img/iconvoice/iconvoice1-thin.png);
+      }
+      &:nth-child(2) {
+        background-image: url(../../res/img/iconvoice/iconvoice2-thin.png);
+      }
+      &:last-child {
+        background-image: url(../../res/img/iconvoice/iconvoice3-thin.png);
+      }
+    }
+  }
+}
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}

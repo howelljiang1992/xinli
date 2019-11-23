@@ -1,0 +1,400 @@
+@import "drug-qingdan";
+.container {
+  .weui-search-bar {
+    background-color:#ffffff;
+    border-color: #dfdfdf;
+    border-top: none;
+    padding: 12px 15px;
+    .weui-search-bar__form {
+      height: 35px;
+      line-height: 35px;
+      font-size: 16px;
+      border-radius: 17px;
+      background-color: #f7f7f7;
+      border: none;
+      .weui-search-bar__box {
+        padding-left: 36px;
+        padding-right: 40px;
+        .iconfont-sousuo {
+          position: absolute;
+          left: 12px;
+          top: 2px;
+          line-height: 35px;
+          color: #888888;
+          font-size: 16px;
+        }
+        .weui-search-bar__input {
+          height: 35px;
+          line-height: 35px;
+          padding: 0;
+        }
+        .iconfont-quxiao {
+          position: absolute;
+          top: 0;
+          right: 50px;
+          color: #cacaca;
+        }
+        .btn-search {
+          display: none;
+          color: #14BA84;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }
+        .weui-btn-clear {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          color: #000000;
+          font-size: 16px;
+        }
+      }
+    }
+    .link-icon {
+      .weui-badge {
+        color: #ffffff;
+      }
+    }
+    .weui-search-bar__cancel-btn  {
+      font-size: 12px;
+      height: 35px;
+      line-height: 35px;
+    }
+  }
+  &.search-wrap {
+    padding-bottom: 50px;
+  }
+.weui-search__result {
+  border-bottom: 1px solid #dfdfdf;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  .recently-search {
+    padding: 10px;
+    background: #f7f7f7;
+    overflow: hidden;
+    border-bottom: 1px solid #dfdfdf;
+    .tit-left {
+      float: left;
+      color: #888888;
+      font-size: 14px;
+    }
+    .btn-del {
+      float: right;
+      color: #cacaca;
+      bottom: 5rpx;
+      font-size: 14px;
+      .iconfont-huishou {
+        margin-right: 5px;
+      }
+    }
+  }
+  .weui-cells {
+    margin-top: 0;
+    background-color: #FFFFFF;
+    line-height: 1.47058824;
+    font-size: 17px;
+    overflow: hidden;
+    position: relative;
+    &:before {
+      content: " ";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      height: 1px;
+      border-top: 1px solid #e5e5e5;
+      color: #e5e5e5;
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0;
+      -webkit-transform: scaleY(0.5);
+      transform: scaleY(0.5);
+      z-index: 2;
+    }
+    .weui-cell {
+      padding: 15px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      .weui-cell__bd {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        font-size: 14px;
+      }
+      .weui-cell__ft {
+        padding-right: 0;
+        text-align: right;
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+  .weui-cell_access .weui-cell__ft {
+    padding-right: 0;
+    &:after {
+      display: none;
+    }
+  }
+  /*shangpin*/
+  .drug-list {
+    background: #fff;
+    margin-top: 0;
+    &:before{display: none}
+    .weui-cells_checkbox .weui-check:checked + .weui-icon-checked:before {
+      color: #14BA84;
+    }
+    .weui-cell_access {
+      &:active{
+        opacity: 1;
+      }
+      .weui-check__label {
+        margin-left: -25px;
+      }
+      .weui-cell__hd{
+        &:active{
+          opacity: .5;
+        }
+      }
+      &:before {
+        left: 0;
+      }
+      .weui-cell__right {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 85px;
+      }
+      &.lose-efficacy {
+        .weui-cell__bd {
+          .h3,.price {
+            color: #888;
+          }
+        }
+        .weui-agree {
+          span {
+            display: block;
+            background: #cacaca;
+            font-size: 12px;
+            color: #fff;
+            padding: 2px 5px;
+            border-radius: 10px;
+            white-space:nowrap;
+          }
+        }
+      }
+    }
+    .weui-cell__hd {
+      margin-left: 72px;
+      img {
+        position: absolute;
+        left: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 80px;
+        width: 80px;
+      }
+    }
+    .weui-cell__bd {
+      line-height: 1.8;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      .h3 {
+        font-size: 14px;
+        color: #000;
+      }
+      .row {
+        position: relative;
+        overflow: hidden;
+        span {
+          display: block;
+          font-size: 12px;
+          color: #888;
+          padding-right: 120px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        .regulation{
+          width:90px;
+          line-height: 25px;
+          vertical-align: middle;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          overflow: hidden;
+          a {
+            float: left;
+            width: 25px;
+            height: 25px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            padding: 0;
+            text-align: center;
+            overflow: auto;
+            &.btn-disabled {
+              color: #dfdfdf;
+            }
+          }
+          .num-con {
+            float: left;
+            width: 40px;
+            height: 25px;
+            background-color: #f7f7f7;
+            border: none;
+            text-align: center;
+            font-size: 16px;
+            box-sizing: border-box;
+          }
+        }
+
+      }
+      .weui-ft,.price {
+        font-size: 12px;
+        color: #888888;
+      }
+    }
+  }
+  .weui-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    .btn-sub {
+      width: 100%;
+      height: 50px;
+      background: #14BA84;
+      font-size: 16px;
+      color: #fff;
+      border: none;
+    }
+  }
+}
+.order-wrap {
+  &.drug-list {
+    margin-bottom: 80px;
+    .weui-cell__hd {
+      margin-left: 100px;
+      img {
+        left: 20px
+      }
+    }
+    .weui-cell__bd {
+      padding-right: 10px;
+      .row {
+        span {
+          padding: 0;
+        }
+      }
+    }
+    .weui-rt .add{
+      font-size: 14px;
+      color: #14BA84;
+      padding: 2px 10px;
+      border: 1px solid #14BA84;
+      border-radius: 15px;
+    }
+  }
+}
+
+.btn-bill {
+  position: fixed;
+  left: 15px;
+  bottom: 15px;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #000;
+  background: #fff;
+  border: 1px solid #E2E2E2;
+  border-radius: 30px;
+  box-shadow: 3px 5px 10px #E2E2E2;
+  z-index: 1000;
+  img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  span {
+    margin-left: 10px;
+    color: #14BA84;
+    font-size: 16px;
+  }
+}
+
+
+.select-drug__wrap {
+  padding: 15px;
+  .page__bd {
+    background: #fff;
+    padding: 0 15px;
+    .drug-list .weui-cell__hd {
+      margin-right: 20px;
+      img {
+        left: 0;
+      }
+    }
+    .weui-cell__bd .row span {
+      padding: 0;
+    }
+    .drug-dill {
+      h3 {
+        padding: 15px 0;
+        font-size: 14px;
+        position: relative;
+        &:before {
+          content: " ";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          height: 1px;
+          border-bottom: 1px solid #E5E5E5;
+          color: #E5E5E5;
+          -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+          -webkit-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+        }
+      }
+      .ditt-item {
+        padding: 15px 0;
+        position: relative;
+        &:before {
+          content: " ";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          height: 1px;
+          border-bottom: 1px solid #E5E5E5;
+          color: #E5E5E5;
+          -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+          -webkit-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+        }
+        .weui-flex {
+          line-height: 30px;
+          .weui-flex__item {
+            font-size: 12px;
+            color: #888;
+          }
+        }
+      }
+    }
+  }
+}
+.u-flyer {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: fixed;
+  z-index: 9999;
+}

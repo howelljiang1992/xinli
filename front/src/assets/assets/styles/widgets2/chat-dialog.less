@@ -1,0 +1,341 @@
+@import '../modules2/wxstyle';
+
+.chat-dialog-wrap {
+  margin-top: 20px;
+  .chat-dialog {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    .face {
+      width: 40px;
+      height: 40px;
+      border-radius: 3px;
+      &.doct {
+        background: url('../../res/img/ico-doctor-normal.png') no-repeat 0 0;
+        -webkit-background-size: contain;
+        background-size: contain;
+      }
+      &.pat {
+        background: url('../../res/img/ico-patient-normal.png') no-repeat 0 0;
+        -webkit-background-size: contain;
+        background-size: contain;
+      }
+      img {
+        width: 100%;
+        border-radius: 3px;
+      }
+    }
+    .chat-dialog__bd {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      flex: 1;
+      position: relative;
+      .hint {
+        vertical-align: middle;
+        display: inline-block;
+        padding: 0 5px;
+        i {
+          font-size: 16px;
+          &.weui-icon-warn {
+            color: @csui-red;
+          }
+        }
+      }
+      .message {
+        display: inline-block;
+        max-width: 75%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 8px;
+        margin-left: 15px;
+        margin-right: 5px;
+        border-radius: 5px;
+        position: relative;
+        background: @csui-fff;
+        font-size: @fz-14;
+        color: @csui-000;
+        word-break: break-all;
+        vertical-align: middle;
+        border-top-left-radius: 0;
+        &:before {
+          position: absolute;
+          content: '';
+          width: 5px;
+          height: 6px;
+          background: url('../../res/img/chatdialog-icol.png') no-repeat 0 0;
+          -webkit-background-size: contain;
+          background-size: contain;
+          top: 0;
+          left: -4px;
+        }
+        &.media {
+          img {
+            max-width: 150px;
+            max-height: 200px;
+          }
+        }
+      }
+      /*�����Ի���*/
+      .media-voice {
+        display: inline-block;
+        .hint {
+          display: inline-block;
+          color: @csui-888;
+          font-size: @fz-17;
+          line-height: 34px;
+          padding: 0;
+        }
+        .message {
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+    &.doct-first {
+      padding-top: 20px;
+    }
+  }
+  .hint-hd {
+    text-align: left;
+    font-size: @fz-12;
+    color: @csui-888;
+    margin-bottom: 5px;
+  }
+  &.right {
+    .chat-dialog {
+      text-align: right;
+      .message {
+        margin-right: 15px;
+        margin-left: 0;
+        font-size: @fz-14;
+        background: @theme-color;
+        text-align: left;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 0;
+        color: @csui-fff;
+        &:before {
+          position: absolute;
+          content: '';
+          width: 5px;
+          height: 6px;
+          background: url('../../res/img/chatdialog-icor.png') no-repeat 0 0;
+          -webkit-background-size: contain;
+          background-size: contain;
+          top: 0;
+          right: -4px;
+          left: auto;
+        }
+      }
+      .media-voice {
+        float: right;
+        .message {
+          text-align: right;
+        }
+      }
+    }
+    .hint-hd {
+      text-align: right;
+    }
+  }
+  /*�����Ի���*/
+  &.dialog-px {
+    .chat-dialog .message {
+      background: @csui-fff;
+      border-color: @csui-df;
+      padding-right: 70px;
+      &:before {
+        border-left-color: @csui-df;
+      }
+      &:after {
+        border-left-color: @csui-fff;
+      }
+      h3 {
+        font-size: 17px;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 12px;
+        color: @csui-888;
+        &.pxlogo {
+          width: 45px;
+          height: 45px;
+          background: @theme-color;
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          text-align: center;
+          .ico-px {
+            width: 22px;
+            height: 26px;
+            display: inline-block;
+            margin-top: 9.5px;
+            background: url(../../res/img/px/ico-px-w.png) no-repeat 0 0;
+            -webkit-background-size: contain;
+            background-size: contain;
+          }
+        }
+      }
+    }
+    &.right {
+      .chat-dialog {
+        .message {
+          color: @csui-000;
+          &:before {
+            background: url('../../res/img/chatdialog-icol.png') no-repeat 0 0;
+            -webkit-background-size: contain;
+            background-size: contain;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+          }
+        }
+      }
+    }
+  }
+  /*����Ի���*/
+  &.dialog-report {
+    .weui-cells {
+      margin: 0.5em -8px -8px;
+      background: none;
+      &:before {
+        left: 8px;
+      }
+      &:after {
+        display: none;
+      }
+      .weui-cell {
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 14px;
+        .weui-cell__ft:after {
+          margin-top: -8px;
+        }
+        &:before {
+          left: 8px;
+        }
+        &.dis {
+          .ico-report {
+            background: url('../../res/img/ico-report-dis.png') no-repeat 0 0;
+            -webkit-background-size: contain;
+            background-size: contain;
+          }
+          .weui-cell__bd {
+            color: @csui-b2;
+          }
+        }
+      }
+    }
+    .ico-report {
+      width: 15px;
+      height: 16.5px;
+      background: url('../../res/img/ico-report.png') no-repeat 0 0;
+      -webkit-background-size: contain;
+      background-size: contain;
+      display: inline-block;
+      margin-right: 5px;
+    }
+    &.pingjia {
+      .chat-hint-layer {
+        background: @csui-fff;
+        text-align: left;
+        border-radius: 5px;
+        padding: 0;
+        display: block;
+        .weui-panel {
+          background: none;
+          &:before {
+            display: none;
+          }
+          .weui-media-box {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 5px;
+            .weui-media-box__title {
+              color: @csui-000;
+              margin-bottom: 3px;
+            }
+            .weui-media-box__desc {
+              font-size: 14px;
+            }
+          }
+          .weui-panel__ft {
+            .weui-cell_link {
+              font-size: 14px;
+              .weui-cell__bd {
+                .ico-report,
+                span {
+                  vertical-align: middle;
+                }
+                span {
+                  color: @theme-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.chat-hint {
+  .chat-hint-layer {
+    background: @csui-ce;
+    color: @csui-fff;
+    font-size: @fz-14;
+    border-radius: 4px;
+    padding: 5px;
+    display: inline-block;
+    max-width: 100%;
+    span,
+    .rating-star {
+      display: inline-block;
+      vertical-align: top;
+    }
+    .rating-star {
+      ul {
+        vertical-align: top;
+      }
+      i {
+        font-size: @fz-14;
+        color: @csui-df;
+        display: inline-block;
+        line-height: 18px;
+      }
+      .on i {
+        color: @csui-fff;
+      }
+    }
+  }
+  a {
+    color: @csui-link;
+    font-size: @fz-12;
+  }
+  margin-top: 20px;
+  /*评价*/
+  &.pj-hint {
+    .chat-hint-layer {
+      display: block;
+      .link-label {
+        padding-top: 10px;
+        span {
+          line-height: 1;
+          padding-top: 3px;
+          padding-bottom: 2.5px;
+          float: left;
+          background: none;
+          color: @csui-fff;
+          border: 1px solid @csui-fff;
+        }
+      }
+      p {
+        text-align: left;
+        word-break: break-all;
+      }
+    }
+  }
+}

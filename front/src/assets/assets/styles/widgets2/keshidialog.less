@@ -1,0 +1,43 @@
+.keshi-dialog {
+  .weui-dialog {
+    height: 100%;
+    right: 0;
+    left: auto;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    top: 0;
+    .weui-dialog__hd {
+      padding: 15px;
+      text-align: left;
+      // display: box;
+      display: flex;
+      img {
+        width: 28px;
+        height: 28px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+      h3 {
+        -webkit-box-flex: 1;
+        box-flex: 1;
+        word-break: break-all;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: @fz-17;
+        vertical-align: middle;
+        color: #000;
+        font-weight: 400;
+      }
+    }
+    .weui-dialog__bd {
+      padding: 0;
+      text-align: left;
+      color: #000;
+      .weui-cells {
+        margin-top: 0;
+      }
+    }
+  }
+}

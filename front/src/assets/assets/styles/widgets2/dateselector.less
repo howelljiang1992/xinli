@@ -1,0 +1,82 @@
+.date-selector {
+  .weui-cells {
+    margin-top: 0;
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+  .weui-cell_switch {
+    margin-bottom: 10px;
+  }
+  .date-cell {
+    width: 100%;
+    height: 50px;
+    padding-bottom: 15px;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    .date-cell-before,
+    .date-cell-after {
+      width: 12%;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      background: #fff;
+      text-align: center;
+      i {
+        color: @csui-888;
+        line-height: 50px;
+      }
+      &.enable {
+        i {
+          color: @theme-color;
+        }
+      }
+    }
+    .date-cell-before {
+      left: 0;
+    }
+    .date-cell-after {
+      right: 0;
+    }
+    .date-cell-cards {
+      width: 76%;
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      left: 12%;
+      & > div {
+        height: 100%;
+      }
+      .date-card {
+        height: 100%;
+        display: inline-block;
+        width: calc(100% / 4);
+        text-align: center;
+        line-height: 1.3;
+        vertical-align: middle;
+        position: relative;
+        color: #888;
+        span {
+          display: block;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  .date-card-chosen {
+    color: @theme-color !important;
+    i {
+      color: #fff !important;
+    }
+  }
+
+  .date-card-disabled {
+    color: #b2b2b2 !important;
+    i {
+      color: #b2b2b2 !important;
+    }
+  }
+}

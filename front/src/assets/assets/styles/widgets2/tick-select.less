@@ -1,0 +1,95 @@
+@import '../modules2/wxstyle';
+
+.tick-select {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tick-select__option {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.8;
+  padding: 0 10px;
+  color: @csui-888;
+  border-radius: 3px;
+  border: 1px solid @csui-ca;
+  user-select: none;
+}
+
+.tick-select__option--small,
+.tick-select__option--small--disable {
+  &:extend(.tick-select__option);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.tick-select__option:active,
+.tick-select__option--small:active {
+  color: @csui-green;
+  border: 1px solid @csui-green;
+}
+
+.tick-select__option--noborder {
+  &:extend(.tick-select__option);
+  border: 1px solid transparent;
+}
+
+.tick-select--split {
+  width: 100%;
+  .tick-select;
+  .tick-select__option,
+  .tick-select__option--small,
+  .tick-select__option--small--disable,
+  .tick-select__option--noborder {
+    width: 48%;
+    &:first-of-type {
+      margin-right: 3%;
+    }
+  }
+}
+
+/* mixin for tick-select__option checked style */
+.tick-select__option--checked--iconfont {
+  color: @csui-green;
+  border: 1px solid @csui-green;
+  &::after {
+    content: '';
+    position: absolute;
+    border-top: 10px solid @csui-green;
+    border-left: 10px solid transparent;
+    right: 0;
+  }
+  &::before {
+    content: '\e60a';
+    position: absolute;
+    font-family: 'iconfont';
+    top: 0;
+    right: 0;
+    font-size: 5px;
+    color: @csui-fff;
+    z-index: 100;
+  }
+}
+//
+//.tick-select__option--checked {
+//  box-sizing: border-box;
+//  color: @csui-green;
+//  border: 1px solid @csui-green;
+//  background: url(../../res/img/insur/tick-selector.png) no-repeat top right;
+//  background-size: 12px 12px;
+//}
+//
+//.tick-select__option--checked-error {
+//  box-sizing: border-box;
+//  color: @csui-red;
+//  border: 1px solid @csui-red;
+//  background: url(../../res/img/insur/tick-selector-error.png) no-repeat top right;
+//  background-size: 12px 12px;
+//}
+//
+//.tick-select__option--small--disable.tick-select__option--checked {
+//  &:extend(.tick-select__option--checked-error);
+//}

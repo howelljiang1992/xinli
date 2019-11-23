@@ -1,0 +1,131 @@
+body {
+  background: @body-color;
+}
+
+/*form*/
+
+.weui-cell_access .weui-cell__ft,
+.weui-cell_select .weui-cell__bd {
+  &:after {
+    -webkit-transform: none;
+    transform: none;
+    border: none;
+    font-family: 'iconfont' !important;
+    content: '\e613';
+    position: absolute;
+    bottom: 0;
+    margin-top: -11px;
+    color: @csui-df;
+  }
+}
+
+.weui-cell_switch {
+  .weui-cell__ft {
+    span {
+      font-size: 17px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+    input {
+      vertical-align: middle;
+    }
+  }
+}
+
+.btn-area-hor {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  .weui-btn {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    margin-right: 15px;
+    & + .weui-btn {
+      margin-top: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+/*�ײ���ť*/
+.wenzhen .weui-msg__extra-area,
+.huifu-wrap .weui-msg__extra-area,
+.pingjia-wrap .weui-msg__extra-area {
+  margin-bottom: 0;
+  background: @csui-fff;
+  .weui-footer {
+    .weui-btn-area {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    a {
+      color: @csui-fff;
+    }
+  }
+}
+
+.weui-msg {
+  &.style1 {
+    padding-top: 130px;
+    .weui-msg__icon-area {
+      .img {
+        width: 130px;
+        height: 130px;
+      }
+    }
+    .weui-msg__title {
+      font-size: @fz-17;
+      color: @csui-888;
+    }
+    .weui-msg__desc {
+      font-size: @fz-12;
+      color: @csui-888;
+    }
+  }
+  &.style2 {
+    padding-top: 110px;
+    .weui-msg__icon-area {
+      margin-bottom: 25px;
+      .img {
+        width: 130px;
+        height: 130px;
+      }
+    }
+    .weui-msg__title {
+      font-size: @fz-17;
+      color: @csui-888;
+    }
+    .weui-msg__desc {
+      font-size: @fz-14;
+      color: @csui-888;
+    }
+  }
+}
+
+.tx-left {
+  text-align: left;
+}
+.theme-color {
+  color: @theme-color;
+}
+.warn-color {
+  color: @csui-err;
+}
+.wait-color {
+  color: @csui-fa0;
+}
+.thin-color {
+  color: @csui-888;
+}
+.copyhint {
+  font-size: 10px;
+  color: #888;
+  text-align: center;
+  margin-bottom: 15px;
+}
+em {
+  font-style: normal;
+}

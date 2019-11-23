@@ -1,0 +1,270 @@
+@import 'widgets2/chat-dialog';
+@import 'widgets2/pro-dialog';
+@import 'widgets2/actionsheet';
+@import 'widgets2/pingjia';
+@import 'widgets2/iconvoice';
+@import 'widgets2/luyin-dialog';
+@import 'widgets2/form';
+
+.chat-wrap {
+  .page__bd {
+    padding: 0 15px 75px;
+    text-align: center;
+    overflow: auto;
+    height: 100%;
+  }
+  .page__ft {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: @body-color;
+    .weui-cells.oper {
+      margin-top: 0;
+      background: @csui-fff;
+      .weui-cell {
+        padding: 6px 0;
+        .weui-cell__hd,
+        .weui-cell__ft {
+          height: 28px;
+        }
+      }
+      .weui-cell__hd + .weui-cell__bd {
+        margin-left: 0;
+      }
+      i {
+        color: @csui-aa;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: @fz-24;
+        &.iconfont-jiantouxiangshang {
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+        &.ico-chat4 {
+          margin-left: 10px;
+        }
+        &.ico-chat3 {
+          margin-right: 10px;
+        }
+        &.ico-chat2 {
+          margin-left: 10px;
+        }
+        &.ico-chat1 {
+          margin-right: 10px;
+        }
+      }
+      .weui-cell__bd {
+        position: relative;
+        margin-left: 15px;
+        .weui-textarea,
+        textarea {
+          background: #fff;
+          padding: 5px 25px 5px 5px;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          border: 1px solid #dfdfdf;
+          border-radius: 4px;
+          min-height: 36px;
+          max-height: 104px;
+          margin-left: auto;
+          margin-right: auto;
+          outline: 0;
+          font-size: 16px;
+          overflow-x: hidden;
+          overflow-y: auto;
+          -webkit-user-modify: read-write-plaintext-only;
+          word-break: break-word;
+          .placeholder {
+            color: @csui-ce;
+          }
+          & + a {
+            display: block;
+
+            i {
+              color: @theme-color;
+            }
+          }
+        }
+        a {
+          position: absolute;
+          right: 3px;
+          bottom: 1px;
+          display: block;
+        }
+        .hint {
+          color: @csui-888;
+          font-size: @fz-14;
+          text-align: center;
+          display: block;
+          &.warn {
+            color: @csui-red;
+          }
+          .chat-dialog-wrap {
+            margin-top: 0;
+            .chat-dialog__bd {
+              text-align: center;
+              .message {
+                float: none;
+                margin-right: 0;
+                span {
+                  display: inline-block;
+                  vertical-align: middle;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .weui-grids {
+      background: @csui-fff;
+      &:before {
+        display: none;
+      }
+      .weui-grid {
+        width: 25%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        &:before,
+        &:after {
+          display: none;
+        }
+
+        .weui-grid__icon {
+          background: @csui-fff;
+          border-radius: 10px;
+          border: 1px solid @csui-df;
+          text-align: center;
+          width: 54px;
+          height: 54px;
+          i {
+            color: @csui-888;
+            font-size: 28px;
+            line-height: 54px;
+          }
+        }
+        .weui-grid__label {
+          color: @csui-888;
+          font-size: @fz-12;
+        }
+      }
+    }
+    .drop-wrap {
+      background: @csui-fff;
+      .weui-btn-area {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    }
+    /*�ٴ�����*/
+    .weui-media-box {
+      padding: 0;
+      .weui-media-box__hd {
+        width: 50px;
+        height: 50px;
+        padding-top: 5px;
+        padding-left: 15px;
+        padding-bottom: 5px;
+      }
+      .weui-media-box__ft {
+        position: relative;
+        text-align: center;
+        width: 100px;
+        h4 {
+          font-size: @fz-17;
+          margin-bottom: 2px;
+          color: @theme-color;
+        }
+        p {
+          color: @theme-color;
+        }
+        &:before {
+          content: ' ';
+          position: absolute;
+          bottom: 0;
+          top: 0;
+          left: 0;
+          width: 1px;
+          height: 100%;
+          border-left: 1px solid #d9d9d9;
+          color: #d9d9d9;
+          -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+          -webkit-transform: scaleX(0.5);
+          transform: scaleX(0.5);
+        }
+      }
+    }
+  }
+}
+
+/*���ûظ�����*/
+.huifu-wrap {
+  .weui-cells {
+    margin-top: 0;
+    &:before {
+      display: none;
+    }
+  }
+  .weui-msg__extra-area.oper {
+    height: 44px;
+    .weui-footer {
+      position: relative;
+      width: 100%;
+      a {
+        font-size: @fz-17;
+        position: absolute;
+        height: 44px;
+        line-height: 44px;
+        &:first-child {
+          color: @csui-red;
+          left: 15px;
+        }
+        &:last-child {
+          color: @theme-color;
+          right: 15px;
+        }
+      }
+    }
+  }
+}
+
+/*chat ico*/
+.chat-wrap .page__ft .weui-grids .weui-grid .weui-grid__icon i {
+  &.ico-image,
+  &.ico-huifu,
+  &.ico-bingli,
+  &.ico-px,
+  &.ico-jianchabaogao,
+  &.ico-end {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    -webkit-background-size: contain;
+    background-size: contain;
+    display: inline-block;
+    margin-top: 12px;
+  }
+  &.ico-image {
+    background-image: url('../res/img/ico-image.png');
+  }
+  &.ico-huifu {
+    background-image: url('../res/img/ico-huifu.png');
+  }
+  &.ico-bingli {
+    background-image: url('../res/img/ico-bingli.png');
+  }
+  &.ico-px {
+    background-image: url('../res/img/ico-px.png');
+  }
+  &.ico-jianchabaogao {
+    background-image: url('../res/img/ico-jianchabaogao.png');
+  }
+  &.ico-end {
+    background-image: url('../res/img/ico-end.png');
+  }
+}

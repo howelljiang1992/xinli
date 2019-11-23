@@ -1,0 +1,80 @@
+@import './widgets2/tick-select.less';
+
+/* newly added style only for override the styles somewhere else */
+
+.px-wrap .weui-cells.weui-cells_checkbox .weui-check__label {
+  padding-top: 0;
+}
+
+.px-wrap .weui-media-box__title .weui-flex__item {
+  line-height: 29px;
+}
+
+.add-padding-left {
+  padding-left: 35px;
+}
+
+.fix-width {
+  width: 70px;
+}
+.px-list {
+  justify-content: flex-start;
+  margin-left: 30px;
+  .tick-select__option--small {
+    margin: 5px 0.8em 5px 0;
+  }
+}
+
+/* ux style for px page
+*  js-toggle-edit:
+*   edit-px, 此处class完全为防止有其他样式覆盖而增加
+*   default-mode: .edit-px
+*     show edit icon
+*   active mode: .edit-px.toggle-edit
+*     arrow transform up and change to edit icon
+*/
+
+.edit-px .iconfont-h-arr-r {
+  opacity: 0;
+}
+
+.edit-px.toggle-edit .iconfont-h-arr-r {
+  display: inline-block;
+  opacity: 1;
+  transform: rotate(-90deg);
+  transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.edit-px.toggle-edit .iconfont-bianji {
+  display: none;
+}
+
+.prescription-selector-title {
+  width: 6em;
+}
+
+.hide-radio {
+  display: none;
+}
+
+.tick-select__option--small {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  line-height: 1.8;
+  padding: 0 10px;
+  color: #888;
+  border-radius: 3px;
+  border: 1px solid #cacaca;
+  user-select: none;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.hide-radio:checked + .tick-select__option--small {
+  box-sizing: border-box;
+  color: #13ba84;
+  border: 1px solid #13ba84;
+  background: url(../res/img/insur/tick-selector.png) no-repeat 100% 0;
+  background-size: 12px 12px;
+}

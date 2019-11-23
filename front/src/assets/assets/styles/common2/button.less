@@ -1,0 +1,44 @@
+@import '../modules2/wxstyle';
+.btn-dis {
+  background: @csui-df;
+  color: @csui-b2;
+  &:active {
+    background: @csui-df;
+    color: @csui-b2;
+  }
+}
+.weui-btn {
+  line-height: 40px;
+  font-size: 17px;
+  &.weui-btn_mini {
+    border-radius: 3px;
+  }
+  &:after {
+    display: none;
+  }
+  &.weui-btn_primary {
+    background-color: @theme-color;
+    &:not(.weui-btn_disabled):active {
+      background-color: @theme-dark-color;
+    }
+    &.weui-btn_disabled {
+      background-color: @theme-dis-color;
+    }
+  }
+  &.weui-btn_plain-primary {
+    color: @theme-color;
+    border-color: @theme-color;
+    &:not(.weui-btn_plain-disabled):active {
+      background: @theme-thin-color2;
+      color: @theme-color;
+      border-color: @theme-color;
+    }
+    &.weui-btn_plain-disabled {
+      color: @theme-dis-color;
+      border-color: @theme-dis-color;
+    }
+  }
+}
+.weui-btn-area {
+  margin-bottom: 1em;
+}
