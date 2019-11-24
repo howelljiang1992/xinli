@@ -20,7 +20,7 @@ app.use(json())
 app.use(logger())
 app.use(require('koa-static')(__dirname + '/dist'))
 
-console.log('__dirname====>', __dirname);
+// console.log('__dirname====>', __dirname);
 app.use(views(__dirname + '/dist', {
   extension: 'html'
 }))

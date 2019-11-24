@@ -1,6 +1,7 @@
 <template>
   <div>
     Hello VUE
+   <router-link :to="{path:'/report'}">关于</router-link>
   </div>
 </template>
 
