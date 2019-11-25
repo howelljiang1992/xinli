@@ -1,0 +1,319 @@
+
+.header {
+  background-color: #c0c0c0;
+  height: 60px;
+}
+
+.header-content {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.header-left {
+  float: left;
+  line-height: 60px;
+  margin-right: 20px;
+  .header-img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 10px;
+  }
+  .header-title {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-weight: bold;
+  }
+}
+
+.nav-bar {
+  list-style: none;
+  float: left;
+  height: 60px;
+  .header-item {
+    float: left;
+    margin: 10px;
+  }
+}
+
+.search-input {
+  height: 20px;
+  border-radius: 5px;
+}
+
+.content {
+  width: 60%;
+  margin: 0 auto;
+  // background-color: aqua;
+
+  .topic-wapper {
+    position: relative;
+    height: 50px;
+    .article-topic {
+      position: absolute;
+      left: 20px;
+      top: 10px;
+
+      .topic-item {
+        border-radius: 20px;
+        padding: 8px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      .topic-item-active,
+      .topic-item:hover {
+        border: 1px solid #0b8bff;
+        color: #0b8bff;
+      }
+    }
+    .upload-btn {
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+    }
+  }
+
+  .article-list {
+    margin-top:10px;
+    min-height: 600px;
+
+    .article-list-left {
+      width: 48%;
+      height: 250px;
+      float: left;
+    }
+
+    .article-list-right {
+      width: 48%;
+      float: right;
+      height: 250px;
+    }
+
+    .article-item {
+      width:100%;
+      height:120px;
+      background-color: rgba(245, 243, 243, 0.897);
+      border-radius: 10px;
+      margin-bottom: 20px;
+      padding: 10px;
+
+      .article-item-image {
+        width: 88px;
+        height: 88px;
+        float: left;
+        vertical-align: middle;
+        text-align: center;
+      }
+      .article-item-content {
+        text-align: left;
+        margin-left:100px;
+
+        .title {
+           font-weight: bold;
+        }
+        .desc {
+          font-size: 14px;
+          margin-top:10px;
+        }
+        .tag {
+          font-size: 12px;
+          color: #0b8bff;
+          margin-top:10px;
+        }
+      }
+    }
+  }
+}
+
+  .questions-content {
+    background-color: rgb(221, 219, 219);
+    height:950px;
+    margin-top:60px;
+
+    .questions-wrapper {
+      width: 60%;
+      margin: 0 auto;
+      height: 950px;
+
+      .questions-label {
+        height: 50px;
+        // background-color: aqua;
+        padding-top:20px;
+        position: relative;
+
+        .questions-label-left {
+          float: left;
+          .title-text {
+            color:#0b8bff;
+            font-size: 24px;
+            margin-right: 15px;
+          }
+          .title-desc {
+            font-size: 15px;
+          }
+        }
+        .questions-label-right {
+          float: right;
+          position:absolute;
+          right:0px;
+          bottom:0px;
+          .question-number {
+            color:#0b8bff;
+            margin-left:10px;
+          }
+        }
+      }
+      .questions-list {
+        // height: 1000px;
+        margin-top: 10px;
+
+        .questions-list-left {
+           width: 65%;
+           background-color: #fff;
+           border-radius: 10px;
+           float: left;
+           min-height: 650px;
+           .questions-more {
+               height: 30px;
+               text-align: right;
+               margin-top: 30px;
+               padding-right: 30px;
+           }
+           .list-content {
+              margin-top: 20px;
+              .questions-item {
+                  border: 1px solid #ddefff;
+                  min-height: 120px;
+                  margin: 15px;
+                  padding: 5px;
+                  border-radius: 8px;
+              
+                  .item-title {
+                      text-align: left;
+                      .answers-num, .effect-num {
+                          border-radius: 20px;
+                          background-color: #ddefff;
+                          color: #0b8bff;
+                          margin-right: 10px;
+                          float: right;
+                          padding: 5px 15px;
+                          font-size: 12px;
+                      }
+                  }
+
+                  .item-content {
+                    text-align: left;
+                    margin-left: 10px;
+                    margin-top: 10px;
+                    .user-icon {
+                        width: 50px;
+                        height: 50px;
+                        float: left;
+                        border-radius: 50%;
+                    }
+                    .item-desc {
+                        background-color: #f3f4f5
+                    }
+                    .item-tag-list{
+                        margin-top:10px;
+                        .item-tag {
+                            font-size: 14px;
+                            margin-right: 10px;
+                            color:gray;
+                        }
+                    }
+                  }
+               }
+           }
+        }
+        .questions-list-top {
+            width: 30%;
+            background-color: #fff;
+            border-radius: 10px;
+            float: right;
+            min-height: 650px;
+        }
+      }
+    }
+  }
+
+  .ceping-content {
+    //  background-color: rgb(140, 209, 76);
+     height: 600px;
+     margin-top: 20px;
+     
+     .ceping-wrapper {
+        background-color:#fff;
+        height: 600px;
+        width: 60%;
+        margin: 0 auto;
+
+        .ceping-label {
+            height: 50px;
+            // background-color: #c0c0c0;
+
+            .ceping-label-left {
+                float: left;
+                .ceping-title {
+                    font-size: 24px;
+                    color: #0b8bff;
+                    margin-right: 15px;
+                }
+            }
+
+            .ceping-label-right {
+                float: right;
+            }
+        }
+
+        .ceping-list {
+            .ceping-item {
+                // background-color: aquamarine;
+                width: 22%;
+                height: 250px;
+                float:left;
+                margin: 10px;
+                box-shadow: 10px 10px 5px #cecaca;
+                border-radius: 10px;
+                position: relative;
+
+                .ceping-icon {
+                   width: 100%;
+                   height: 160px;
+                   border-radius: 10px;
+                }
+
+                .ceping-statics {
+                    margin-top: 10px;
+                    .ceping-statics-tag {
+                        background-color: #5ed49d;
+                        color:#fff;
+                        border-radius: 20px;
+                        padding: 2px 20px;
+                        float: left;
+                        font-size: 14px;
+                        margin-left: 10px;
+                    }
+                    .ceping-statics-nums {
+                        float: right;
+                        color:#999;
+                        font-size: 14px;
+                        margin-right: 10px;
+                    }
+                }
+                .go-test {
+                    position: absolute;
+                    background:#000;
+                    color: #fff;
+                    border-radius: 8px;
+                    opacity:0.6;
+                    padding: 5px 15px;
+                    top: 40%;
+                    left: 30%;
+                }
+            }
+        }
+     }
+  }
