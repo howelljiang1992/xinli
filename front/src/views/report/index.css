@@ -1,0 +1,75 @@
+/*
+* @Author: Howelljiang
+* @Date:   2017-11-19 19:49:20
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-20 16:26:06
+*/
+
+/* 顶部 */
+*{
+	-webkit-tap-highlight-color: transparent;
+
+}
+
+.jdm {
+  width: 100%;
+  margin: 0 auto;
+}
+
+html, body {
+  background-color: #f7f7f7;
+}
+
+.jdm-search {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color:#c91523;
+  z-index: 10;
+}
+
+.jdm-search .search {
+  width: 100%;
+  height: 100%;
+  padding-left: 75px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  position: relative;
+}
+/* 搜索框 */
+.jdm-search .search input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  margin: 5px 0;
+  border-radius: 15px;
+  padding-left: 25px;
+  box-sizing: border-box;
+}
+
+/* logo */
+.jdm-search .search-logo {
+  display: block;
+  position: absolute;
+  top: 10px;
+	left: 10px;
+  width: 56px;
+  height: 30px;
+  background-image: url("../../assets/img/jd-sprites.png");
+  -webkit-background-size: 200px 200px;
+  background-size: 200px 200px;
+  background-position: -3px -108px;
+}
+
+.jdm-search .jdm-login {
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  font-size: 16px;
+  line-height: 40px;
+  color: #fff;
+}
+

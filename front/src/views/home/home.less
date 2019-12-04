@@ -1,18 +1,19 @@
 
 .header {
-  background-color: #c0c0c0;
+  background-color: #e5e8ea;
   height: 60px;
 }
 
 .header-content {
   width: 60%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .header-left {
   float: left;
   line-height: 60px;
-  margin-right: 20px;
+  margin-right: 30px;
   .header-img {
     display: inline-block;
     width: 30px;
@@ -25,6 +26,8 @@
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
     font-weight: bold;
+    vertical-align: middle;
+    font-size: 20px;
   }
 }
 
@@ -35,7 +38,36 @@
   .header-item {
     float: left;
     margin: 10px;
+    line-height: 40px;
+    cursor: pointer;
   }
+  .header-item:hover {
+    color:#0b8bff
+  }
+  .active {
+    color:#0b8bff
+  }
+}
+
+.search-wrap {
+  float: right;
+  line-height: 60px;
+  position: relative;
+  margin-right:20px;
+}
+
+.search-wrap input {
+  border: 1px solid rgb(207, 202, 202);
+  width: 180px;
+  padding: 5px 10px;
+}
+
+.search-wrap img {
+  position: absolute;
+  top: 20px;
+  right: 12px;
+  width:18px;
+  height: 18px;
 }
 
 .search-input {
@@ -139,7 +171,6 @@
 
       .questions-label {
         height: 50px;
-        // background-color: aqua;
         padding-top:20px;
         position: relative;
 
@@ -166,7 +197,6 @@
         }
       }
       .questions-list {
-        // height: 1000px;
         margin-top: 10px;
 
         .questions-list-left {
@@ -240,7 +270,6 @@
   }
 
   .ceping-content {
-    //  background-color: rgb(140, 209, 76);
      height: 600px;
      margin-top: 20px;
      
@@ -252,7 +281,6 @@
 
         .ceping-label {
             height: 50px;
-            // background-color: #c0c0c0;
 
             .ceping-label-left {
                 float: left;
@@ -270,7 +298,6 @@
 
         .ceping-list {
             .ceping-item {
-                // background-color: aquamarine;
                 width: 22%;
                 height: 250px;
                 float:left;

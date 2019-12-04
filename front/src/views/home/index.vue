@@ -7,7 +7,7 @@
           <span class="header-title">慧家教育</span>
         </div>
         <ul class="nav-bar">
-          <li class="header-item">首页</li>
+          <li class="header-item active">首页</li>
           <li class="header-item">文章</li>
           <li class="header-item">问答</li>
           <li class="header-item">测试</li>
@@ -15,12 +15,14 @@
           <li class="header-item">倾诉</li>
         </ul>
 
-        <input class="search-input search" placeholder="搜索" />
-        <img
-          class="search_a"
-          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAgBJREFUOBGtVL8vREEQnnnvnIhIiFKhQHONqEjkjpyLUqvSSFSUev/AdagkopLoRH134biESo5EQ6OgJRGF+7Xm23dzFs/jJTa523k73/ftzO7MMoWMUrk6Z5gWiUyGDA1ZCNMDEZfZ0EE2M14MobVhjufk/GasUX/bMYZmnOVvJjOdJLq6V2amUrdfnZ4uFCtXmUa9dgExZn6RaDZ8nyb8wWSf/YmNNfiAAbZwVk0rX2eGEUQGMTPAxCXyk8tz06l7BblzsXIzTM3ariGTFfGnRFdy0o00AXA7TSuWTY/nBGhcEdfGRrJxrnRaLcicBVf8s4rx7AVomhJZlJiSLCbA2vShoT4vuE25T0P5n9JUsDsHkVIea6oBWy5FSkOG75sjzHHGByfQANfr1Fl/8i6OmMUqR2vVCsZWiSZ4ZDtAQM+10WhoiFc5qiEQOUMuA9ps8kIIJXLpgxNoAOyhN2FIO63bosXHHwaw4ACqGrA9NDp6U4q0z3aAkSL4ZQiWuVnbAwdc97GQlInQ6GgjtBM6ICpS+IBpkZltN8Gxu38nGjwO1Godyq4DAkQH5G2daWnIBeDMkKbNhvhVarjXijGt5dIT27A7gviI+3zV62/zUsdb4IqSFf0kaB3yF+eBLZxernZEiZdCBVX4rzNE5dnblGPa/xdBbFysXI/0cP/jO+TD+9S+xiaiAAAAAElFTkSuQmCC"
-          alt
-        />
+        <div class="search-wrap">
+          <input class="search-input search" placeholder="搜索" />
+          <img
+            class="search_a"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAgBJREFUOBGtVL8vREEQnnnvnIhIiFKhQHONqEjkjpyLUqvSSFSUev/AdagkopLoRH134biESo5EQ6OgJRGF+7Xm23dzFs/jJTa523k73/ftzO7MMoWMUrk6Z5gWiUyGDA1ZCNMDEZfZ0EE2M14MobVhjufk/GasUX/bMYZmnOVvJjOdJLq6V2amUrdfnZ4uFCtXmUa9dgExZn6RaDZ8nyb8wWSf/YmNNfiAAbZwVk0rX2eGEUQGMTPAxCXyk8tz06l7BblzsXIzTM3ariGTFfGnRFdy0o00AXA7TSuWTY/nBGhcEdfGRrJxrnRaLcicBVf8s4rx7AVomhJZlJiSLCbA2vShoT4vuE25T0P5n9JUsDsHkVIea6oBWy5FSkOG75sjzHHGByfQANfr1Fl/8i6OmMUqR2vVCsZWiSZ4ZDtAQM+10WhoiFc5qiEQOUMuA9ps8kIIJXLpgxNoAOyhN2FIO63bosXHHwaw4ACqGrA9NDp6U4q0z3aAkSL4ZQiWuVnbAwdc97GQlInQ6GgjtBM6ICpS+IBpkZltN8Gxu38nGjwO1Godyq4DAkQH5G2daWnIBeDMkKbNhvhVarjXijGt5dIT27A7gviI+3zV62/zUsdb4IqSFf0kaB3yF+eBLZxernZEiZdCBVX4rzNE5dnblGPa/xdBbFysXI/0cP/jO+TD+9S+xiaiAAAAAElFTkSuQmCC"
+            alt
+          />
+        </div>
       </div>
     </div>
 
