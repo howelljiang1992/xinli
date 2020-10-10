@@ -430,6 +430,9 @@ export default {
   },
   computed: {
     swiper() {
+      console.log('test01');
+      console.log('test02');
+      console.log('test03');
       return this.$refs.mySwiper.swiper;
     }
   }
